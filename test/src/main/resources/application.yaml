@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/currency
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: off
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
